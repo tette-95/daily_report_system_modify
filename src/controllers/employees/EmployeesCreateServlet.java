@@ -57,7 +57,7 @@ public class EmployeesCreateServlet extends HttpServlet {
             e.setUpdated_at(currentTime);
             e.setDelete_flag(0);
             e.setMistake_counts(0);
-            e.setMistake_at(null);
+            e.setMistake_at(currentTime);
 
 
             List<String> errors = EmployeeValidator.validate(e, true, true);
